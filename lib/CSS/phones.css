@@ -1,0 +1,384 @@
+body{
+    overflow: hidden;
+}
+
+#pageContainer{
+    background-color: #ada9a5;
+    height: 95vh;
+}
+
+form{
+    display:none;
+}
+
+#detailsForm{
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: -300px;
+}
+#contactForm{
+    position: absolute;
+    margin-left: 1200px;
+}
+
+#choosePhoneType{
+    display:block;
+}
+
+#header{
+    padding-top: 200px;
+}
+
+#form_container{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#phoneImageDiv{
+    text-align: center;
+}
+
+
+
+
+/*Iphone Images*/
+#iphone4Img{
+    height: 300px;
+    width: 400px;
+}
+
+#iphone5Img{
+    height: 250px;
+    width: 400px;
+}
+
+#iphone5sImg{
+    height: 250px;
+    width: 320px;
+}
+
+#iphoneSEImg{
+    height: 270px;
+    width: 310px;
+}
+
+#iphone5cImg{
+    height: 240px;
+    width: 450px;
+}
+
+#iphone6Img{
+    height: 270px;
+    width: 220px;
+}
+
+#iphone6PlusImg{
+    height: 270px;
+    width: 350px;
+}
+
+#iphone6sImg{
+    height: 230px;
+    width: 320px;
+}
+
+#iphone6sPlusImg{
+    height: 270px;
+    width: 250px;
+}
+
+#iphone7Img{
+    height: 350px;
+    width: 400px;
+}
+
+#iphone7PlusImg{
+    height: 300px;
+    width: 320px;
+}
+
+#iphone8Img{
+    height: 330px;
+    width: 400px;
+}
+
+#iphone8PlusImg{
+    height: 300px;
+    width: 290px;
+}
+
+#iphoneXImg{
+    height: 270px;
+    width: 310px;
+}
+
+#iphoneXRImg{
+    height: 250px;
+    width: 350px;
+}
+
+#iphoneXSImg{
+    height: 300px;
+    width: 350px;
+}
+
+#iphoneXSMaxImg{
+    height: 300px;
+    width: 350px;
+}
+
+#iphone11Img{
+    height: 320px;
+    width: 290px;
+}
+
+#iphone11ProImg{
+    height: 320px;
+    width: 220px;
+}
+
+#iphone11ProMaxImg{
+    height: 320px;
+    width: 230px;
+}
+
+#iphoneSE2Img{
+    height: 270px;
+    width: 250px;
+}
+
+
+/*Google Images*/
+
+#nexus5Img{
+    height: 270px;
+    width: 270px;
+}
+#nexus6Img{
+    height: 270px;
+    width: 270px;
+}
+#nexus5xImg{
+    height: 270px;
+    width: 270px;
+}
+#nexus6pImg{
+    height: 270px;
+    width: 270px;
+}
+
+/*Pixel Images*/
+
+#pixelImg{
+    height: 250px;
+    width: 350px;
+}
+#pixelXLImg{
+    height: 300px;
+    width: 300px;
+}
+#pixel2Img{
+    height: 280px;
+    width: 280px;
+}
+#pixel2XLImg{
+    height: 300px;
+    width: 220px;
+}
+#pixel3Img{
+    height: 280px;
+    width: 280px;
+}
+#pixel3XLImg{
+    height: 300px;
+    width: 300px;
+}
+#pixel3aImg{
+    height: 260px;
+    width: 300px;
+}
+#pixel3aXLImg{
+    height: 300px;
+    width: 300px;
+}
+#pixel4Img{
+    height: 300px;
+    width: 350px;
+    image-rendering: pixelated;
+}
+#pixel4XLImg{
+    height: 300px;
+    width: 320px;
+    image-rendering: pixelated;
+}
+#pixel4aImg{
+    height: 300px;
+    width: 280px;
+    image-rendering: pixelated;
+}
+
+/*Samsung Images*/
+#galaxyS4Img{
+    height: 270px;
+    width: 350px;
+}
+
+#galaxyS5Img{
+    height: 270px;
+    width: 350px;
+}
+
+#galaxyS6Img{
+    height: 300px;
+    width: 300px;
+}
+
+#galaxyS6EdgeImg{
+    height: 300px;
+    width: 300px;
+}
+
+#galaxyS6EdgePlusImg{
+    height: 300px;
+    width: 300px;
+}
+
+#galaxyS4Img{
+    height: 270px;
+    width: 350px;
+}
+
+#galaxyS7Img{
+    height: 310px;
+    width: 290px;
+}
+
+#galaxyS7EdgeImg{
+    height: 320px;
+    width: 330px;
+}
+
+#galaxyS8Img{
+    height: 320px;
+    width: 330px;
+}
+
+#galaxyS8PlusImg{
+    height: 320px;
+    width: 270px;
+}
+
+#galaxyS9Img{
+    height: 320px;
+    width: 300px;
+}
+
+#galaxyS9PlusImg{
+    height: 350px;
+    width: 320px;
+}
+
+#galaxyS10EImg{
+    height: 320px;
+    width: 300px;
+}
+
+#galaxyS10Img{
+    height: 320px;
+    width: 300px;
+}
+
+#galaxyS10PlusImg{
+    height: 320px;
+    width: 330px;
+}
+
+#galaxyS20Img{
+    height: 320px;
+    width: 300px;
+}
+
+#galaxyS20PlusImg{
+    height: 320px;
+    width: 340px;
+}
+
+#galaxyS20UltraImg{
+    height: 320px;
+    width: 300px;
+}
+
+#galaxyNote4Img{
+    height: 300px;
+    width: 300px;
+}
+
+#galaxyNote5Img{
+    height: 270px;
+    width: 330px;
+}
+
+#galaxyNote7Img{
+    height: 270px;
+    width: 400px;
+}
+
+#galaxyNote8Img{
+    height: 270px;
+    width: 330px;
+}
+
+#galaxyNote9Img{
+    height: 270px;
+    width: 270px;
+}
+
+#galaxyNote10Img{
+    height: 270px;
+    width: 270px;
+}
+
+#galaxyNote10PlusImg{
+    height: 300px;
+    width: 300px;
+}
+
+#galaxyNote20Img{
+    height: 300px;
+    width: 300px;
+    image-rendering: pixelated;
+}
+
+#galaxyNote20UltraImg{
+    height: 300px;
+    width: 300px;
+    image-rendering: pixelated;
+}
+
+#galaxyS4ActiveImg{
+    height: 270px;
+    width: 310px;
+}
+
+#galaxyS5ActiveImg{
+    height: 270px;
+    width: 310px;
+}
+
+#galaxyS6ActiveImg{
+    height: 270px;
+    width: 370px;
+}
+
+
+#galaxyS7ActiveImg{
+    height: 280px;
+    width: 300px;
+}
+
+
+#galaxyS8ActiveImg{
+    height: 300px;
+    width: 300px;
+}
+

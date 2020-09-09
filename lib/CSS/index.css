@@ -1,11 +1,32 @@
 body{
-
+    overflow: hidden;
+}
+#backgroundContainer{
+    background-color: blue;
+    height: 95vh;
 }
 
-#title{
-    text-align: center;
+.leftside{
+    /* border: solid black; */
+    background-image: url(/assets/appleLogo.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#logo{
-    height: 200px;
+.rightside{
+    /* border: solid black; */
+    background-image: url(/assets/android.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f2a852;
+}
+
+#header{
+    position: absolute;
+    margin-left: 727px;
+    margin-top: 200px;
+    /* border: solid black; */
+    font-size: 100px;
 }

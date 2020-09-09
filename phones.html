@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='lib/CSS/phones.css'/>
+    <link rel='stylesheet' href='lib/CSS/style.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--FireBase API-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCDUG-yVw09-ABghpNjmmkq-mofW9nWNhI",
+    authDomain: "repair-it-c7d55.firebaseapp.com",
+    databaseURL: "https://repair-it-c7d55.firebaseio.com",
+    projectId: "repair-it-c7d55",
+    storageBucket: "repair-it-c7d55.appspot.com",
+    messagingSenderId: "646163746841",
+    appId: "1:646163746841:web:92aad83b8d1f7d609c1a88",
+    measurementId: "G-VXYC2WVD9S"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <div id='navBar' class='row h-25'>
+            <a class='col-lg-2' href='index.html'><div align='center'><img height='50px' id='logo' src='assets/logo.png'/></div></a>
+            <a class='col-lg-2' href='phones.html'><div align='center'>Phones</div></a>
+            <a class='col-lg-2' href='computers.html'><div align='center'>Computers</div></a>
+            <a class='col-lg-2' href='about.html'><div align='center'>About</div></a>
+            <a class='col-lg-2' href='contact.html'><div align='center'>Contact Me</div></a>
+        </div>
+        <!--Header-->
+        <div id='pageContainer'>
+        <div id='header'>
+            <h1 id='title'>Repair IT</h1>
+        </div>
+
+        
+        <!--Choose Phone type-->
+        <div id='form_container'>
+        <div>
+            <form id='choosePhoneType'>
+                <label for='phoneType'>Choose Phone Type</label>
+                <select name='phoneType' id='phoneType'>
+                    <option value='default'>Select</option>
+                    <option value='apple'>Apple</option>
+                    <option value='android'>Android</option>
+                </select>
+            </form>
+        </div>
+
+
+
+        <!--phone selection div-->
+        <div id='androidPhoneContainer1'>
+        <!--Choose Phone Company(Android only)-->
+        <div>
+            <form id='androidBrand'>
+                <label for='phoneCompany'>Choose Phone Company</label>
+                <select name='phoneCompany' id='phoneCompany'>
+                    <option value='default'>Select</option>
+                    <option value='google'>Google</option>
+                    <option value='samsung'>Samsung</option>
+                </select>
+            </form>
+        </div>
+        </div>
+
+        <!--Choose Phone Model Iphones-->
+        <div id='iphoneContainer1'>
+        <div>
+            <form id='chooseIphoneModel'>
+                <label for='iphoneModel'>Choose Model</label>
+                <select name='iphoneModel' id='iphoneModel'>
+                    <option value='default'>Select</option>
+                    <option value='four'>IPhone 4</option>
+                    <option value='four_s'>IPhone 4s</option>
+                    <option value='five'>IPhone 5</option>
+                    <option value='five_s'>IPhone 5s</option>
+                    <option value='se'>IPhone SE</option>
+                    <option value='five_c'>IPhone 5c</option>
+                    <option value='six'>IPhone 6</option>
+                    <option value='sixPlus'>IPhone 6 Plus</option>
+                    <option value='six_s'>IPhone 6s</option>
+                    <option value='six_sPlus'>IPhone 6s Plus</option>
+                    <option value='seven'>IPhone 7</option>
+                    <option value='sevenPlus'>IPhone 7 Plus</option>
+                    <option value='eight'>IPhone 8</option>
+                    <option value='eightPlus'>IPhone 8 Plus</option>
+                    <option value='x'>IPhone X</option>
+                    <option value='xr'>IPhone XR</option>
+                    <option value='xs'>IPhone XS</option>
+                    <option value='xs_max'>IPhone XS Max</option>
+                    <option value='eleven'>IPhone 11</option>
+                    <option value='elevenPro'>IPhone 11 Pro</option>
+                    <option value='elevenProMax'>IPhone 11 Pro Max</option>
+                    <option value='se_two'>IPhone SE 2nd Generation</option>
+                </select>
+            </form>
+        </div>
+        </div>
+
+        <!--Choose Google brandline-->
+        <div>
+            <form id='chooseGoogleType'>
+                <label for='chooseGoogleLine'>Choose Model Type</label>
+                <select name='chooseGoogleLine' id='chooseGoogleLine'>
+                    <option value='default'>Select</option>
+                    <option value='nexus'>Nexus</option>
+                    <option value='pixel'>Pixel</option>
+                </select>
+            </form>
+        </div>
+      <!--Nexus Models-->
+        <div>
+            <form id='chooseNexusModel'>
+                <label for='nexusModel'>Choose Model</label>
+                <select name='nexusModel' id='nexusModel'>
+                    <option value='default'>Select</option>
+                    <option value='nexus_five'>Nexus 5</option>
+                    <option value='nexus_six'>Nexus 6</option>
+                    <option value='nexus_fiveX'>Nexus 5x</option>
+                    <option value='nexus_sixP'>Nexus 6P</option>
+                </select>
+            </form>
+        </div>
+
+          <!--Pixel Models-->
+          <div>
+            <form id='choosePixelModel'>
+                <label for='pixelModel'>Choose Model</label>
+                <select name='pixelModel' id='pixelModel'>
+                    <option value='default'>Select</option>
+                    <option value='pixel'>Pixel</option>
+                    <option value='pixelXL'>Pixel XL</option>
+                    <option value='pixel_two'>Pixel 2</option>
+                    <option value='pixel_twoXL'>Pixel 2 XL</option>
+                    <option value='pixel_three'>Pixel 3</option>
+                    <option value='pixel_threeXL'>Pixel 3 XL</option>
+                    <option value='pixel_threeA'>Pixel 3a</option>
+                    <option value='pixel_threeAXL'>Pixel 3a XL</option>
+                    <option value='pixel_four'>Pixel 4</option>
+                    <option value='pixel_fourXL'>Pixel 4 XL</option>
+                    <option value='pixel_fourA'>Pixel 4a</option>
+
+                </select>
+            </form>
+        </div>
+        <!--Choose Phone Model Samsung-->
+        <div>
+            <form id='chooseSamsungType'>
+                <label for='samsungType'>Choose Model Type</label>
+                <select name='samsungType' id='samsungType'>
+                    <option value='default'>Select</option>
+                    <option value='galaxy_s'>Galaxy S Series</option>
+                    <option value='galaxy_note'>Galaxy Note Series</option>
+                    <option value='active'>Galaxy Active Series</option>
+                </select>
+            </form>
+        </div>
+        <!--Galaxy S series-->
+        <div>
+            <form id='chooseSamsungModelGalaxy_s'>
+                <label for='samsungModel'>Choose Model</label>
+                <select name='samsungModel' id='galaxy_sModel'>
+                    <option value='default'>Select</option>
+                    <option value='s_four'>Galaxy S4</option>
+                    <option value='s_five'>Galaxy S5</option>
+                    <option value='s_six'>Galaxy S6</option>
+                    <option value='s_sixEdge'>Galaxy S6 Edge</option>
+                    <option value='s_sixEdgePlus'>Galaxy S6 Edge+</option>
+                    <option value='s_seven'>Galaxy S7</option>
+                    <option value='s_sevenEdge'>Galaxy S7 Edge</option>
+                    <option value='s_eight'>Galaxy S8</option>
+                    <option value='s_eightPlus'>Galaxy S8+</option>
+                    <option value='s_nine'>Galaxy S9</option>
+                    <option value='s_ninePlus'>Galaxy S9+</option>
+                    <option value='s_tenE'>Galaxy S10e</option>
+                    <option value='s_ten'>Galaxy S10</option>
+                    <option value='s_tenPlus'>Galaxy S10+</option>
+                    <option value='s_twenty'>Galaxy S20</option>
+                    <option value='s_twentyPlus'>Galaxy S20+</option>
+                    <option value='s_twentyUltra'>Galaxy S20 Ultra 5G</option>
+
+                </select>
+            </form>
+        </div>
+        <!--Galaxy Note Series-->
+        <div>
+            <form id='chooseSamsungModelGalaxy_note'>
+                <label for='samsungModel'>Choose Model</label>
+                <select name='samsungModel' id='galaxy_noteModel'>
+                    <option value='default'>Select</option>
+                    <option value='note_four'>Galaxy Note 4</option>
+                    <option value='note_five'>Galaxy Note 5</option>
+                    <option value='note_seven'>Galaxy Note 7</option>
+                    <option value='note_eight'>Galaxy Note 8</option>
+                    <option value='note_nine'>Galaxy Note 9</option>
+                    <option value='note_ten'>Galaxy Note 10</option>
+                    <option value='note_tenPlus'>Galaxy Note 10 Plus</option>
+                    <option value='note_twenty'>Galaxy Note 20</option>
+                    <option value='note_twentyUltra'>Galaxy Note 20 Ultra</option>
+                </select>
+            </form>
+        </div>
+        <!--Galaxy Active Series-->
+        <div>
+            <form id='chooseSamsungModelGalaxy_sActive'>
+                <label for='samsungModel'>Choose Model</label>
+                <select name='samsungModel' id='galaxy_activeModel'>
+                    <option value='default'>Select</option>
+                    <option value='s_four_active'>Galaxy S4 Active</option>
+                    <option value='s_five_active'>Galaxy S5 Active</option>
+                    <option value='s_six_active'>Galaxy S6 Active</option>
+                    <option value='s_seven_active'>Galaxy S7 Active</option>
+                    <option value='s_eight_active'>Galaxy S8 Active</option>
+                </select>
+            </form>
+        </div>
+        </div>
+
+        <!--Image div-->
+        <div id=phoneImageDiv>
+
+        </div>
+        <!--Details box-->
+        <div>
+            <form id='detailsForm'>
+                <label>Details: (Select All That Apply)</label><br>
+                <input type='checkbox' value='screen' name='broken_screen' id='broken_screen'>
+                <label for='broken_screen'>Broken Screen</label><br>
+
+                <input type='checkbox' value='battery' name='battery_issue' id='battery_issue'>
+                <label for='battery_issue'>Battery Issue</label><br>
+
+                <input type='checkbox' value='back_glass' name='brokenBack_glass' id='brokenBack_glass'>
+                <label for='brokenBack_glass'>Broken Back Glass</label><br>
+
+                <input type='checkbox' value='camera' name='camera_issue' id='camera_issue'>
+                <label for='camera_issue'>Camera Issue</label><br>
+
+                <input type='checkbox' value='homeButton' name='hButton_issue' id='hButton_issue'>
+                <label for='hButton'>Home Button Issue</label><br>
+
+                <input type='checkbox' value='other' name='other' id='other'>
+                <label for='other'>Other Issue</label><br>
+
+                <label for='details '>Describe Your Issue</label>
+                <input type='text' id='details' name='details'><br>
+            </form>
+            <form id='contactForm'>
+                <label for='fname'>First Name</label>
+                <input type='text' id='fname' name='fname'><br>
+                <label for='lname'>Last Name</label>
+                <input type='text' id='lname' name='lname'><br>
+                <label for='email'>Email</label>
+                <input type='text' id='email' name='email'>
+                <button type='submit' id='submitButton'>Submit</button>
+            </form>            
+
+            
+        </div>
+        </div>
+
+
+    <!-- Optional JavaScript -->
+    <script rel='script' src='lib/JS/phones.js'></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
