@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel='stylesheet' href='lib/CSS/style.css'/>
+    <link rel='stylesheet' href='lib/CSS/computers.css'/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
     </head>
@@ -20,8 +21,87 @@
             <a class='col-lg-2' href='about.html'><div align='center'>About</div></a>
             <a class='col-lg-2' href='contact.html'><div align='center'>Contact Me</div></a>
         </div>
+
+        <div id='pageContainer'>
+        <div>
         <!--Header-->
-        <h1>Page Coming Soon</h1>
+        <h1 class="title">Laptop or PC Repairs</h1>
+        </div>
+
+        <div id='pageFormDiv'>
+        <div id=issueTypeDiv>
+            <form>
+                <div>
+                    <input class='hardware_issue' type='radio' name='issue' value='hardware'>
+                    <label class='hardware_issue' for='hardware'>Hardware</label>
+                </div>
+          
+                <div>
+                    <input class='software_issue' type='radio' name='issue' value='software'>
+                    <label class='software_issue' for='software'>Software</label>
+                </div>
+              
+                <div>
+                    <input class='unsure_issue' type='radio' name='issue' value='unsure'>
+                    <label class='unsure_issue' for='unsure'>Unsure</label>   
+                </div>
+
+            </form>
+        </div>
+
+
+        <div id='deviceTypeDiv'>
+            <form>
+                <label for='laptop_or_pc'>Type of Device</label>
+                <select name='laptop_or_pc'>
+                    <option value='laptop'>Laptop</option>
+                    <option value='desktop'>Desktop</option>
+                    <option value='other'>Other</option>
+                </select>
+            </form>
+        </div>
+
+
+
+        <div id='hardwareIssuesDiv'>
+            <form>
+                <div>
+                    <input class='screen_issue' type='checkbox' value='screen_issue' name='screen_issue'>
+                    <label class='screen_issue' for='screen_issue'>Screen Issue</label>
+                </div>
+
+                <div>
+                    <input class='keyboard_issue' type='checkbox' value='keyboard_issue' name='keyboard_issue' >
+                    <label class='keyboard_issue' for='keyboard_issue'>Keyboard Issue</label>
+                </div>
+
+                <div>
+                    <input class='other_issue' type='checkbox' value='battery_issue' name='battery_issue'>
+                    <label class='other_issue' for='battery_issue'>Battery Issue</label>
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <div id='specifyDiv'>
+            <form>
+                <label for='input_details'>Specify Details</label>
+                <input name='input_details' type='text'>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div id='submitButton'>
+        <button id='submit' onclick="submit()">Submit</button>
+    </div>
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

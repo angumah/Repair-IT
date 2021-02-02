@@ -1,0 +1,69 @@
+#pageContainer{
+    background-color: #ada9a5;
+    height: 95vh;
+}
+
+form input {
+    display: block;
+}
+
+div {
+}
+
+#pageFormDiv {
+margin-top: 340px;
+display: flex;
+justify-content: space-evenly;
+}
+
+
+
+.hardware_issue {
+    display: inline;
+}
+
+.software_issue {
+    display: inline;
+}
+
+.unsure_issue {
+    display: inline;
+}
+
+.screen_issue {
+    display: inline;
+}
+
+.keyboard_issue {
+    display: inline;
+}
+
+
+.other_issue {
+    display: inline;
+}
+
+
+#issueTypeDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#deviceTypeDiv {
+}
+
+#hardwareIssuesDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#specifyDiv{
+}
+
+#pageFormDiv div {
+    width: 300px;
+}
+
+#submit{
+
+border: solid black;}
